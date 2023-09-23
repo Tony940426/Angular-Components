@@ -4,6 +4,9 @@ import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
+  { path: 'elements', 
+    loadChildren: () => import('./elements/elements.module').then(m => m.ElementsModule)
+  },
   { path: '', component: HomeComponent},
   //If you have a path of empty string, it is the home screen
   { path: '**', component: NotFoundComponent}
