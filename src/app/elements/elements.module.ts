@@ -6,13 +6,17 @@ import { ElementsHomeComponent } from './elements-home/elements-home.component';
 import { PlaceholderComponent } from './placeholder/placeholder.component';
 import { TimesDirective } from './times.directive';
 import { SharedModule } from '../shared/shared.module';
+import { CardComponent } from './card/card.component';
+import { CardTimesDirective } from './card-times.directive';
 
 
 @NgModule({
   declarations: [
     ElementsHomeComponent,
     PlaceholderComponent,
-    TimesDirective
+    TimesDirective,
+    CardComponent,
+    CardTimesDirective
   ],
   imports: [
     CommonModule,
