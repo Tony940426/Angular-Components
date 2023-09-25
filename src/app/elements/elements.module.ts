@@ -8,6 +8,7 @@ import { TimesDirective } from './times.directive';
 import { SharedModule } from '../shared/shared.module';
 import { CardComponent } from './card/card.component';
 import { CardTimesDirective } from './card-times.directive';
+import { SegmentComponent } from './segment/segment.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { CardTimesDirective } from './card-times.directive';
     PlaceholderComponent,
     TimesDirective,
     CardComponent,
-    CardTimesDirective
+    CardTimesDirective,
+    SegmentComponent
   ],
   imports: [
     CommonModule,
