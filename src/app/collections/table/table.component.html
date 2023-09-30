@@ -1,4 +1,4 @@
-<table class="ui celled table">
+<table [ngClass] = 'classNames' class="ui striped table">
     <thead>
       <tr>
         <th *ngFor = "let header of headers">
@@ -8,7 +8,7 @@
     </thead>
     <tbody>
       <tr *ngFor = "let record of data">
-        <td *ngFor= "let header of headers">
+        <td *ngFor = "let header of headers">
           {{ record[header.key] }}
         </td>
       </tr>
