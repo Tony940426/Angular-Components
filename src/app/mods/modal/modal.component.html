@@ -5,12 +5,12 @@
         To do this, input another event listener and utilize stopPropagation
         -->
         <div class="header">
-            MODAL!
+            <ng-content select="[modalTitle]">
+                
+            </ng-content>
         </div>
         <div class="content">
-            <p>
-                This is some content for the modal
-            </p>
+            <ng-content></ng-content>
         </div>
         <div class="actions">
             <button class="ui button" (click)="onCloseClick()">OK</button>
