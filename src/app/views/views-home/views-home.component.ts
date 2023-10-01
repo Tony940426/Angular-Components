@@ -11,5 +11,16 @@ export class ViewsHomeComponent {
     { values: 900, label: 'Revenue'},
     { values: 12000, label: 'Number of Views'}
   ]
-
+  items = [
+    { 
+      image: '/assets/Images/couch.jpeg',
+      title: 'Couch',
+      description: 'This is a OK, sightly used couch'
+    },
+    {
+      image: '/assets/Images/dresser.jpeg',
+      title: 'Dresser',
+      description: 'Brand new dresser, never used.'
+    }
+  ]
 }
