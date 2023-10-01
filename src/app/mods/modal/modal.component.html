@@ -1,6 +1,9 @@
-<div class="ui dimmer visible active">
-    <div class="ui modal visible active">
-        <i class="close icon"></i>
+<div class="ui dimmer visible active" (click)="onCloseClick()">
+    <div (click)="$event.stopPropagation()" class="ui modal visible active">
+        <i class="close icon" (click)="onCloseClick()"></i>
+        <!-- Event bubbling, if the event does not get handled there, it will bubble up to the parent element 
+        To do this, input another event listener and utilize stopPropagation
+        -->
         <div class="header">
             MODAL!
         </div>
@@ -10,8 +13,7 @@
             </p>
         </div>
         <div class="actions">
-            <button class="ui button">OK</button>
+            <button class="ui button" (click)="onCloseClick()">OK</button>
         </div>
     </div>
-
 </div>
